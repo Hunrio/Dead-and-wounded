@@ -1,7 +1,5 @@
 body,html{
 	margin: 0;
-	height: 100%;
-	overflow: hidden;
 	background : linear-gradient(to left, #614385, #516395);
     /* added keyframes to background to make it more heated ;)*/
     animation: body;
@@ -20,6 +18,8 @@ h1{
 }
 #side2{
     color: white;
+    padding: 15px;
+	width: 50vw;
     
 }
 #validation{
@@ -35,12 +35,10 @@ main{
 #side1{
 	padding: 15px;
 	width: 50vw;
-	height: 70%;
 }
 input,button{
 	border-radius: 7px;
-    
-	padding: 15px;
+    padding: 15px;
 	margin: 5px 0 15px 0;
 }
 button{
@@ -60,10 +58,6 @@ button:hover{
     transition-duration: .5s;
 /*    transform: scale(1.1);*/
 	transform: rotateY(360deg);
-}
-#side2{
-	padding: 15px;
-	width: 50vw;
 }
 .red{
 	color:red;
@@ -138,6 +132,19 @@ table, td {
 	background: rgb(158, 152, 76);
 	text-align: center;
 	padding: 15px;
+}
+
+@media screen and (max-width:768px){
+   main{
+       flex-direction: column;
+       align-items: center;
+   }
+   #side1, #side2{
+       width: 80vw;
+       margin : 5px auto;
+   }
+    
+    
 }
 @keyframes body {
     0%{background : linear-gradient(to left, #614385, #516395);}
