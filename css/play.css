@@ -10,7 +10,7 @@ body,html{
     animation-iteration-count: infinite;
     
 }
-:root{
+:root{ 
     --button-border-t1: rgba( 222, 184, 135, 0.53 );
     --button-border-t2: rgba(0, 255, 255, 0.67);
 }
@@ -151,6 +151,29 @@ table, td {
         margin-bottom: 0;
         padding-bottom: 0;
         height: 30%;
+    }
+    main{
+       flex-direction: column;
+       align-items: center;
+   }
+    #side2{
+        display: block;
+    }
+     main{
+       flex-direction: column;
+       align-items: center;
+   }
+   #side1, #side2{
+       width: 80vw;
+       margin : 5px auto;
+   }
+}
+@media screen and (max-width:400px){
+    #side1{
+        display: block;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: 35%;
     }
     main{
        flex-direction: column;
