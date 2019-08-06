@@ -150,7 +150,8 @@ table, td {
         display: block;
         margin-bottom: 0;
         padding-bottom: 0;
-        min-height: 30%;
+	min-height: 30%;
+        height: auto;
     }
     main{
        flex-direction: column;
