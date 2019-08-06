@@ -150,7 +150,7 @@ table, td {
         display: block;
         margin-bottom: 0;
         padding-bottom: 0;
-        height: 30%;
+        min-height: 30%;
     }
     main{
        flex-direction: column;
